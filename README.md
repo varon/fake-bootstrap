@@ -1,29 +1,11 @@
 # Fake bootstrapping example
 
-This repository shows how to bootstrap FAKE from nothing.
-The `fake.sh` and `fake.cmd` scripts will:
- - install .NET Core with the provided install scripts (https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-install-script)
- - restore FAKE as dotnet-fake cli tool via `dotnet-fake.csproj` (we hope to have a better way in the future)
- - redirect the given arguments `fake <args>` to `dotnet fake <args>`.
+This repository shows how to bootstrap FAKE via paket clitool.
+You get a running fake via:
 
-If dotnet is already a given you can edit the scripts accordingly.
+- `dotnet build` (which will run `.paket/paket.exe restore`)
+- Or alternatively `dotnet restore` followed by `dotnet fake build`
 
-Usage:
+The version of dotnet-fake is managed via `paket.dependencies` and `paket.lock`.
 
-Unix (or git bash on windows after https://github.com/dotnet/cli/pull/8491)
-
-```bash
-git clone https://github.com/matthid/fake-bootstrap.git
-cd fake-bootstrap
-./fake.sh run myscript.fsx 
-```
-
-Windows (powershell/cmd)
-
-```batch
-git clone https://github.com/matthid/fake-bootstrap.git
-cd fake-bootstrap
-.\fake.cmd run myscript.fsx
-```
-
-To upgrade to latest packages, just delete `myscript.fsx.lock` and run fake again.
+To upgrade to latest packages, just use `.paket/paket.exe update` and run fake again.

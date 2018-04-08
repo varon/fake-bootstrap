@@ -1,6 +1,4 @@
-#r "paket:
-nuget Fake.Core.Target //"
-
+#r "paket: groupref FakeBuild //"
 #load "./.fake/myscript.fsx/intellisense.fsx"
 
 open Fake.Core

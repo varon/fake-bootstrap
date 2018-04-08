@@ -1,0 +1,7 @@
+source https://api.nuget.org/v3/index.json
+clitool dotnet-fake
+
+group FakeBuild
+
+source https://api.nuget.org/v3/index.json
+nuget Fake.Core.Target
