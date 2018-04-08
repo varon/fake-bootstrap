@@ -1,3 +1,4 @@
+STORAGE: NONE
 NUGET
   remote: https://api.nuget.org/v3/index.json
     Argu (5.1) - restriction: >= netcoreapp2.0
@@ -370,6 +371,7 @@ NUGET
       System.Runtime.Handles (>= 4.3) - restriction: && (< monoandroid) (< monotouch) (< net46) (>= netstandard1.3) (< xamarinios) (< xamarinmac) (< xamarintvos) (< xamarinwatchos)
 
 GROUP FakeBuild
+STORAGE: NONE
 NUGET
   remote: https://api.nuget.org/v3/index.json
     Fake.Core.CommandLineParsing (5.0.0-rc001) - restriction: || (>= net46) (>= netstandard1.6)
