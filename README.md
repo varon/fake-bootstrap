@@ -18,7 +18,7 @@ Unix (or git bash on windows after https://github.com/dotnet/cli/pull/8491)
 ```bash
 git clone https://github.com/matthid/fake-bootstrap.git
 cd fake-bootstrap
-./fake.sh run myscript.fsx 
+./fake.sh
 ```
 
 Windows (powershell/cmd)
@@ -26,7 +26,7 @@ Windows (powershell/cmd)
 ```batch
 git clone https://github.com/matthid/fake-bootstrap.git
 cd fake-bootstrap
-.\fake.cmd run myscript.fsx
+.\fake.cmd
 ```
 
-To upgrade to latest packages, just delete `myscript.fsx.lock` and run fake again.
+To upgrade to latest packages, just delete `build.fsx.lock` and run fake again.

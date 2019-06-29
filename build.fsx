@@ -1,7 +1,7 @@
 #r "paket:
 nuget Fake.Core.Target //"
 
-#load "./.fake/myscript.fsx/intellisense.fsx"
+#load "./.fake/build.fsx/intellisense.fsx"
 
 open Fake.Core
 
