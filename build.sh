@@ -7,4 +7,4 @@ set -e -o pipefail
 
 PATH="~/.dotnet:$PATH"
 dotnet restore build-bootstrap.csproj
-dotnet fake run $@
+dotnet fake run build.fsx $@
